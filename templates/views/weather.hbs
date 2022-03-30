@@ -41,6 +41,51 @@
     </div>
     {{>footer}}
     <script src="js/main.js"></script>
+    <script>
+        
+        const getCurrentDay = () => {
+            let weekday = new Array(7);
+            weekday[0]= "Sunday";
+            weekday[1]= "Monday";
+            weekday[2]= "Tuesday";
+            weekday[3]= "Wednesday";
+            weekday[4]= "Thursday";
+            weekday[5]= "Friday";
+            weekday[6]= "Saturday";
+
+            let currentTime = new Date();
+            days = weekday[currentTime.getDay()];
+            let day = document.getElementById('day');
+
+            day.innerText= days;
+        };
+
+        getCurrentDay();
+
+        const getCurrentTime = () => {
+            var months = [
+            "January",
+            "February",
+            "Mar",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+            ];
+
+            var month = months[now.getMonth()+1];
+            var date = now.getDate();
+
+            today_date.innerText= month;
+        };
+
+        getCurrentTime();
+    </script>
 
 </body>
 
