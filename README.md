@@ -1,5 +1,3 @@
-#Responsive Weather Website
-
 Tech Stack - HTML, CSS, Bootstrap 4, NodeJS, ExpressJS & Real-Time Weather API.
 
 This website shows the accurate temperature and weather of any place as entered by the user.
